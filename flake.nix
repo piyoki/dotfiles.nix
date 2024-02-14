@@ -1,7 +1,7 @@
 {
   description = "A flake that encapsulates all my dotfiles from other repositories";
 
-  outputs = { self, nixpkgs, flake-utils, qutebrowser, ... }@inputs:
+  outputs = { self, nixpkgs, flake-utils, ... }@inputs:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = (import nixpkgs) { inherit system; };
@@ -9,8 +9,16 @@
           name = "qutebrowser";
           src = inputs.qutebrowser;
           installPhase = ''
-            mkdir -p $out/dotfiles/{qutebrowser}
-            install -Dm444 -t "$out/dotfiles/qutebrowser" config.py
+            mkdir -p $out/$name
+            install -Dm444 -t "$out/$name" config.py
+          '';
+        };
+        waybar = pkgs.stdenv.mkDerivation {
+          name = "waybar";
+          src = inputs.waybar;
+          installPhase = ''
+            mkdir -p $out/$name
+            install -Dm444 -t "$out/$name" *
           '';
         };
       in
@@ -19,6 +27,7 @@
         packages = {
           default = nixpkgs.legacyPackages.${system}.neofetch;
           inherit qutebrowser;
+          inherit waybar;
         };
 
         # dev environment
