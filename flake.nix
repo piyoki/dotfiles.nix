@@ -4,22 +4,26 @@
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
+        installPhase = ''
+          mkdir -p $out/$name
+          cp -r . $out/$name/
+          # install -Dm444 -t "$out/$name" config.py
+        '';
         pkgs = (import nixpkgs) { inherit system; };
         qutebrowser = pkgs.stdenv.mkDerivation {
           name = "qutebrowser";
           src = inputs.qutebrowser;
-          installPhase = ''
-            mkdir -p $out/$name
-            install -Dm444 -t "$out/$name" config.py
-          '';
+          inherit installPhase;
         };
         waybar = pkgs.stdenv.mkDerivation {
           name = "waybar";
           src = inputs.waybar;
-          installPhase = ''
-            mkdir -p $out/$name
-            install -Dm444 -t "$out/$name" *
-          '';
+          inherit installPhase;
+        };
+        nvim = pkgs.stdenv.mkDerivation {
+          name = "nvim";
+          src = inputs.nvim;
+          inherit installPhase;
         };
       in
       {
@@ -28,6 +32,7 @@
           default = nixpkgs.legacyPackages.${system}.neofetch;
           inherit qutebrowser;
           inherit waybar;
+          inherit nvim;
         };
 
         # dev environment
