@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
-          submodules: true
+        #   ref: master
+        #   submodules: true
           token: "${{ secrets.ACCESS_TOKEN }}"
 
       - uses: DeterminateSystems/nix-installer-action@main
@@ -25,7 +25,7 @@ jobs:
       - name: update flake upstream inputs
         shell: bash
         run: |
-          sudo nix flake lock --update-input ${{ inputs.input }}
+          nix flake lock --update-input ${{ inputs.input }}
           git add .
           git status
           # git push -u origin master
