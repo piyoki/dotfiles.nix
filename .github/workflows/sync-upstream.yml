@@ -12,7 +12,7 @@ jobs:
   sync-upstream:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@main
         with:
         #   ref: master
         #   submodules: true
@@ -22,10 +22,13 @@ jobs:
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - uses: DeterminateSystems/flake-checker-action@main
 
-      - name: update flake upstream inputs
+      - name: update flake upstream input
         shell: bash
         run: |
           nix flake lock --update-input ${{ inputs.input }}
-          git add .
-          git status
-          # git push -u origin master
+
+      - uses: EndBug/add-and-commit@main
+        with:
+          add: flake.lock
+          commit: --signoff
+          message: "chore(flake): update flake.lock to sync input.${{ inputs.input }}"
