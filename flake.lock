@@ -72,16 +72,16 @@
     "kitty": {
       "flake": false,
       "locked": {
-        "lastModified": 1708003353,
-        "narHash": "sha256-R8EJYHDZaU+gHngifxeGpZWaF0A//mdM/eMG0Qhdmx0=",
+        "lastModified": 1708003716,
+        "narHash": "sha256-4GawX/A9B+wvaQJgN6w/8a1oFm/pt2Nm/N0Mo6cF4wY=",
         "owner": "yqlbu",
         "repo": "dot-kitty",
-        "rev": "7b338738186f6c9aa2f21948c59364555523d36a",
+        "rev": "bb299ff1c4f7e13a129fa94251a5161b6f615869",
         "type": "github"
       },
       "original": {
         "owner": "yqlbu",
-        "ref": "test",
+        "ref": "x1-carbon",
         "repo": "dot-kitty",
         "type": "github"
       }
