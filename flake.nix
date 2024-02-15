@@ -4,96 +4,53 @@
   outputs = { self, nixpkgs, flake-utils, ... }@inputs:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
-        installPhase = ''
-          cp -r . $out/
-          # install -Dm444 -t "$out/$name" config.py
-        '';
         pkgs = (import nixpkgs) { inherit system; };
-        qutebrowser = pkgs.stdenv.mkDerivation {
-          name = "qutebrowser";
-          src = inputs.qutebrowser;
-          inherit installPhase;
+        src = {
+          inherit (inputs) qutebrowser;
+          inherit (inputs) waybar;
+          inherit (inputs) nvim;
+          inherit (inputs) lf;
+          inherit (inputs) lazygit;
+          inherit (inputs) rofi;
+          inherit (inputs) swaylock;
+          inherit (inputs) swappy;
+          inherit (inputs) tmux;
+          inherit (inputs) fish;
+          inherit (inputs) hypr;
+          inherit (inputs) dunst;
+          inherit (inputs) kitty;
         };
-        waybar = pkgs.stdenv.mkDerivation {
-          name = "waybar";
-          src = inputs.waybar;
-          inherit installPhase;
-        };
-        nvim = pkgs.stdenv.mkDerivation {
-          name = "nvim";
-          src = inputs.nvim;
-          inherit installPhase;
-        };
-        lf = pkgs.stdenv.mkDerivation {
-          name = "lf";
-          src = inputs.lf;
-          inherit installPhase;
-        };
-        lazygit = pkgs.stdenv.mkDerivation {
-          name = "lazygit";
-          src = inputs.lazygit;
-          inherit installPhase;
-        };
-        rofi = pkgs.stdenv.mkDerivation {
-          name = "rofi";
-          src = inputs.rofi;
-          inherit installPhase;
-        };
-        swaylock = pkgs.stdenv.mkDerivation {
-          name = "swaylock";
-          src = inputs.rofi;
-          inherit installPhase;
-        };
-        swappy = pkgs.stdenv.mkDerivation {
-          name = "swappy";
-          src = inputs.swappy;
-          inherit installPhase;
-        };
-        tmux = pkgs.stdenv.mkDerivation {
-          name = "tmux";
-          src = inputs.tmux;
-          inherit installPhase;
-        };
-        fish = pkgs.stdenv.mkDerivation {
-          name = "fish";
-          src = inputs.fish;
-          inherit installPhase;
-        };
-        hypr = pkgs.stdenv.mkDerivation {
-          name = "hypr";
-          src = inputs.hypr;
-          inherit installPhase;
-        };
-        dunst = pkgs.stdenv.mkDerivation {
-          name = "dunst";
-          src = inputs.dunst;
-          inherit installPhase;
-        };
-        kitty = pkgs.stdenv.mkDerivation {
-          name = "kitty";
-          src = inputs.kitty;
-          inherit installPhase;
-        };
+        cfg = builtins.mapAttrs
+          (module: src:
+            pkgs.stdenv.mkDerivation {
+              name = module;
+              inherit src;
+              installPhase = ''
+                cp -r . $out/
+                # install -Dm444 -t "$out/$name" config.py
+              '';
+            }
+          )
+          src;
       in
       {
         # define output packages
         packages = {
           default = nixpkgs.legacyPackages.${system}.neofetch;
-          inherit dunst;
-          inherit fish;
-          inherit hypr;
-          inherit kitty;
-          inherit lazygit;
-          inherit lf;
-          inherit nvim;
-          inherit qutebrowser;
-          inherit rofi;
-          inherit swappy;
-          inherit swaylock;
-          inherit tmux;
-          inherit waybar;
+          inherit (cfg) qutebrowser;
+          inherit (cfg) waybar;
+          inherit (cfg) nvim;
+          inherit (cfg) lf;
+          inherit (cfg) lazygit;
+          inherit (cfg) rofi;
+          inherit (cfg) swaylock;
+          inherit (cfg) swappy;
+          inherit (cfg) tmux;
+          inherit (cfg) fish;
+          inherit (cfg) hypr;
+          inherit (cfg) dunst;
+          inherit (cfg) kitty;
         };
-
         # dev environment
         devShells.default = with pkgs; mkShell {
           packages = [ vim ];
