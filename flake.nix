@@ -5,8 +5,7 @@
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         installPhase = ''
-          mkdir -p $out/$name
-          cp -r . $out/$name/
+          cp -r . $out/
           # install -Dm444 -t "$out/$name" config.py
         '';
         pkgs = (import nixpkgs) { inherit system; };
