@@ -195,26 +195,9 @@
         "nvim": "nvim",
         "qutebrowser": "qutebrowser",
         "rofi": "rofi",
-        "swappy": "swappy",
         "swaylock": "swaylock",
         "tmux": "tmux",
         "waybar": "waybar"
-      }
-    },
-    "swappy": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1706799207,
-        "narHash": "sha256-KayKkcdDgO6tSSEFM5JxNN+vRvVKKcC/mf1Ei929iwk=",
-        "owner": "yqlbu",
-        "repo": "dot-swappy",
-        "rev": "88ec6525f8ef873320f10a4d4f5e77616f8c86fb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yqlbu",
-        "repo": "dot-swappy",
-        "type": "github"
       }
     },
     "swaylock": {

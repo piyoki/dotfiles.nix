@@ -25,14 +25,74 @@
           src = inputs.nvim;
           inherit installPhase;
         };
+        lf = pkgs.stdenv.mkDerivation {
+          name = "lf";
+          src = inputs.lf;
+          inherit installPhase;
+        };
+        lazygit = pkgs.stdenv.mkDerivation {
+          name = "lazygit";
+          src = inputs.lazygit;
+          inherit installPhase;
+        };
+        rofi = pkgs.stdenv.mkDerivation {
+          name = "rofi";
+          src = inputs.rofi;
+          inherit installPhase;
+        };
+        swaylock = pkgs.stdenv.mkDerivation {
+          name = "swaylock";
+          src = inputs.rofi;
+          inherit installPhase;
+        };
+        swappy = pkgs.stdenv.mkDerivation {
+          name = "swappy";
+          src = inputs.swappy;
+          inherit installPhase;
+        };
+        tmux = pkgs.stdenv.mkDerivation {
+          name = "tmux";
+          src = inputs.tmux;
+          inherit installPhase;
+        };
+        fish = pkgs.stdenv.mkDerivation {
+          name = "fish";
+          src = inputs.fish;
+          inherit installPhase;
+        };
+        hypr = pkgs.stdenv.mkDerivation {
+          name = "hypr";
+          src = inputs.hypr;
+          inherit installPhase;
+        };
+        dunst = pkgs.stdenv.mkDerivation {
+          name = "dunst";
+          src = inputs.dunst;
+          inherit installPhase;
+        };
+        kitty = pkgs.stdenv.mkDerivation {
+          name = "kitty";
+          src = inputs.kitty;
+          inherit installPhase;
+        };
       in
       {
         # define output packages
         packages = {
           default = nixpkgs.legacyPackages.${system}.neofetch;
-          inherit qutebrowser;
-          inherit waybar;
+          inherit dunst;
+          inherit fish;
+          inherit hypr;
+          inherit kitty;
+          inherit lazygit;
+          inherit lf;
           inherit nvim;
+          inherit qutebrowser;
+          inherit rofi;
+          inherit swappy;
+          inherit swaylock;
+          inherit tmux;
+          inherit waybar;
         };
 
         # dev environment
@@ -63,16 +123,16 @@
       url = "github:yqlbu/dot-lazygit";
       flake = false;
     };
-    swappy = {
-      url = "github:yqlbu/dot-swappy";
-      flake = false;
-    };
     rofi = {
       url = "github:yqlbu/dot-rofi/x1-carbon";
       flake = false;
     };
     swaylock = {
       url = "github:yqlbu/dot-swaylock/x1-carbon";
+      flake = false;
+    };
+    swappy = {
+      url = "github:yqlbu/dot-swappy/master";
       flake = false;
     };
     waybar = {
