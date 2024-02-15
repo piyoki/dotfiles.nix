@@ -1,0 +1,31 @@
+---
+name: Synchronize upstream inputs
+on:
+  workflow_dispatch:
+    inputs:
+      input:
+        type: string
+        description: flake input to be synced
+        required: true
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          submodules: true
+          token: "${{ secrets.ACCESS_TOKEN }}"
+
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - uses: DeterminateSystems/flake-checker-action@main
+
+      - name: update flake upstream inputs
+        shell: bash
+        run: |
+          sudo nix flake lock --update-input ${{ inputs.input }}
+          git add .
+          git status
+          # git push -u origin master
