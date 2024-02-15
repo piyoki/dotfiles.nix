@@ -112,7 +112,7 @@
       flake = false;
     };
     kitty = {
-      url = "github:yqlbu/dot-kitty/test";
+      url = "github:yqlbu/dot-kitty/x1-carbon";
       flake = false;
     };
   };
