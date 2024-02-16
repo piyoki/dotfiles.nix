@@ -6,19 +6,19 @@
       let
         pkgs = (import nixpkgs) { inherit system; };
         src = {
-          inherit (inputs) qutebrowser;
-          inherit (inputs) waybar;
-          inherit (inputs) nvim;
-          inherit (inputs) lf;
-          inherit (inputs) lazygit;
-          inherit (inputs) rofi;
-          inherit (inputs) swaylock;
-          inherit (inputs) swappy;
-          inherit (inputs) tmux;
-          inherit (inputs) fish;
-          inherit (inputs) hypr;
-          inherit (inputs) dunst;
-          inherit (inputs) kitty;
+          qutebrowser = inputs.dot-qutebrowser;
+          waybar = inputs.dot-waybar;
+          nvim = inputs.dot-nvim;
+          lf = inputs.dot-lf;
+          lazygit = inputs.dot-lazygit;
+          rofi = inputs.dot-rofi;
+          swaylock = inputs.dot-swaylock;
+          swappy = inputs.dot-swappy;
+          tmux = inputs.dot-tmux;
+          fish = inputs.dot-fish;
+          hypr = inputs.dot-hypr;
+          dunst = inputs.dot-dunst;
+          kitty = inputs.dot-kitty;
         };
         cfg = builtins.mapAttrs
           (module: src:
@@ -63,55 +63,55 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # personal dotfiles
-    qutebrowser = {
+    dot-qutebrowser = {
       url = "github:yqlbu/dot-qutebrowser";
       flake = false;
     };
-    nvim = {
+    dot-nvim = {
       url = "github:yqlbu/dot-nvim";
       flake = false;
     };
-    lf = {
+    dot-lf = {
       url = "github:yqlbu/dot-lf";
       flake = false;
     };
-    lazygit = {
+    dot-lazygit = {
       url = "github:yqlbu/dot-lazygit";
       flake = false;
     };
-    rofi = {
+    dot-rofi = {
       url = "github:yqlbu/dot-rofi/x1-carbon";
       flake = false;
     };
-    swaylock = {
+    dot-swaylock = {
       url = "github:yqlbu/dot-swaylock/x1-carbon";
       flake = false;
     };
-    swappy = {
+    dot-swappy = {
       url = "github:yqlbu/dot-swappy/master";
       flake = false;
     };
-    waybar = {
+    dot-waybar = {
       url = "github:yqlbu/dot-waybar/x1-carbon";
       flake = false;
     };
-    tmux = {
+    dot-tmux = {
       url = "github:yqlbu/dot-tmux/x1-carbon";
       flake = false;
     };
-    fish = {
+    dot-fish = {
       url = "github:yqlbu/dot-fish/x1-carbon";
       flake = false;
     };
-    hypr = {
+    dot-hypr = {
       url = "github:yqlbu/dot-hypr/x1-carbon";
       flake = false;
     };
-    dunst = {
+    dot-dunst = {
       url = "github:yqlbu/dot-dunst/x1-carbon";
       flake = false;
     };
-    kitty = {
+    dot-kitty = {
       url = "github:yqlbu/dot-kitty/x1-carbon";
       flake = false;
     };
