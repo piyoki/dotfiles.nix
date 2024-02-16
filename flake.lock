@@ -54,11 +54,11 @@
     "dot-kitty": {
       "flake": false,
       "locked": {
-        "lastModified": 1708088935,
+        "lastModified": 1708091012,
         "narHash": "sha256-4GawX/A9B+wvaQJgN6w/8a1oFm/pt2Nm/N0Mo6cF4wY=",
         "owner": "yqlbu",
         "repo": "dot-kitty",
-        "rev": "59294ebed47708086d670265cd3bcec632fca71e",
+        "rev": "6f1174a0996ade94af4e4ba99228081b555c9b04",
         "type": "github"
       },
       "original": {
