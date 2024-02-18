@@ -37,11 +37,11 @@
     "dot-hypr": {
       "flake": false,
       "locked": {
-        "lastModified": 1708238635,
-        "narHash": "sha256-FUpLY8RKewWVGd3vEli8iWcsvD2ii+zn4nmlpuDIB6o=",
+        "lastModified": 1708250158,
+        "narHash": "sha256-DN4K2lGtvAYKUuQo7BiS80zJQdJn9A7z31tOYI+vEg4=",
         "owner": "yqlbu",
         "repo": "dot-hypr",
-        "rev": "ec746ca106b50cd6e38b2474a6c3b30c92d1a654",
+        "rev": "a3ba664d6a15a04d3208c1b4d8f2fa82005437bf",
         "type": "github"
       },
       "original": {
@@ -183,6 +183,23 @@
         "type": "github"
       }
     },
+    "dot-swaync": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1708249679,
+        "narHash": "sha256-Y9CPLBmjDUQUJC6iqfn6DpdWwg2/fN3cEyfNUtFp4VI=",
+        "owner": "yqlbu",
+        "repo": "dot-swaync",
+        "rev": "8a024947727f6cbf202f158472dffd2c9fa1cbb4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yqlbu",
+        "ref": "x1-carbon",
+        "repo": "dot-swaync",
+        "type": "github"
+      }
+    },
     "dot-tmux": {
       "flake": false,
       "locked": {
@@ -263,6 +280,7 @@
         "dot-rofi": "dot-rofi",
         "dot-swappy": "dot-swappy",
         "dot-swaylock": "dot-swaylock",
+        "dot-swaync": "dot-swaync",
         "dot-tmux": "dot-tmux",
         "dot-waybar": "dot-waybar",
         "flake-utils": "flake-utils",
