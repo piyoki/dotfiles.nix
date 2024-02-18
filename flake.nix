@@ -18,6 +18,7 @@
           fish = inputs.dot-fish;
           hypr = inputs.dot-hypr;
           dunst = inputs.dot-dunst;
+          swaync = inputs.dot-swaync;
           kitty = inputs.dot-kitty;
         };
         cfg = builtins.mapAttrs
@@ -46,9 +47,10 @@
           inherit (cfg) swaylock;
           inherit (cfg) swappy;
           inherit (cfg) tmux;
+          inherit (cfg) dunst;
+          inherit (cfg) swaync;
           inherit (cfg) fish;
           inherit (cfg) hypr;
-          inherit (cfg) dunst;
           inherit (cfg) kitty;
         };
         # dev environment
@@ -109,6 +111,10 @@
     };
     dot-dunst = {
       url = "github:yqlbu/dot-dunst/x1-carbon";
+      flake = false;
+    };
+    dot-swaync = {
+      url = "github:yqlbu/dot-swaync/x1-carbon";
       flake = false;
     };
     dot-kitty = {
