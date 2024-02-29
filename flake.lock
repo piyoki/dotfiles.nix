@@ -169,11 +169,11 @@
     "dot-swaylock": {
       "flake": false,
       "locked": {
-        "lastModified": 1708940887,
-        "narHash": "sha256-NdwDQXpaYD/fDZhDMTtPXBo3oal5bPU0YV4RTG76aQc=",
+        "lastModified": 1709183488,
+        "narHash": "sha256-IbSojdelssVtVADIrsPs4LFX7MiRbaECYMvP5ksS3qE=",
         "owner": "yqlbu",
         "repo": "dot-swaylock",
-        "rev": "6ac79ee1cb60d8cac8a8487ee91eb9c983586411",
+        "rev": "ef9b50e966196d291651ce6f14e0e973d6f578b4",
         "type": "github"
       },
       "original": {
