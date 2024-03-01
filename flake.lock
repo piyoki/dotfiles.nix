@@ -135,11 +135,11 @@
     "dot-rofi": {
       "flake": false,
       "locked": {
-        "lastModified": 1709278234,
-        "narHash": "sha256-YPPAWJjenQ9FS/DKJ/Nnx8Oe0FENa+NziUpzXi2HvxU=",
+        "lastModified": 1709278404,
+        "narHash": "sha256-SBE1SccPUvMccgNk0yUU2MzNn8hoevlSS7p80sjyt7s=",
         "owner": "yqlbu",
         "repo": "dot-rofi",
-        "rev": "d9ecda9a5d4af1d9a1466ea5edccb18bb8df97e6",
+        "rev": "c55a1f0c212af28bc86a16f1011bce7b636acd2e",
         "type": "github"
       },
       "original": {
