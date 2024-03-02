@@ -94,7 +94,7 @@
       flake = false;
     };
     dot-waybar = {
-      url = "github:yqlbu/dot-waybar/x1-carbon";
+      url = "github:yqlbu/dot-waybar/nuc-12";
       flake = false;
     };
     dot-tmux = {
