@@ -106,7 +106,7 @@
       flake = false;
     };
     dot-hypr = {
-      url = "github:yqlbu/dot-hypr/x1-carbon";
+      url = "github:yqlbu/dot-hypr/nuc-12";
       flake = false;
     };
     dot-dunst = {

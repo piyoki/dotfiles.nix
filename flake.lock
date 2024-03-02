@@ -37,16 +37,16 @@
     "dot-hypr": {
       "flake": false,
       "locked": {
-        "lastModified": 1709283415,
-        "narHash": "sha256-ZHfKh2V/7oEMaUQahfKW8cKGsqj8lD5HNOp6Zz3B6Zk=",
+        "lastModified": 1709363286,
+        "narHash": "sha256-3q0ImJlF5iMDVf6fGaTX8ES2oDEP1mFJsnrasQmzS3Y=",
         "owner": "yqlbu",
         "repo": "dot-hypr",
-        "rev": "4134d97034fcc8e0894143d791001b3dcd88a86d",
+        "rev": "6e861428bc342f78e504b4e3875858f354e6aa07",
         "type": "github"
       },
       "original": {
         "owner": "yqlbu",
-        "ref": "x1-carbon",
+        "ref": "nuc-12",
         "repo": "dot-hypr",
         "type": "github"
       }
