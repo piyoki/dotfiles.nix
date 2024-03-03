@@ -3,16 +3,15 @@
     "dot-dunst": {
       "flake": false,
       "locked": {
-        "lastModified": 1709432846,
-        "narHash": "sha256-Tquni9bEZOJly9vzCWh46DnKxS3cUHWka0cIvs9ZAFU=",
+        "lastModified": 1709432988,
+        "narHash": "sha256-dvgPbsSSmytiBZzxgFGGAiEZQCqzF2uBj7ehVVrF/1c=",
         "owner": "yqlbu",
         "repo": "dot-dunst",
-        "rev": "2bfcd7c8220d32d24b8a37b042a6145ac45120f0",
+        "rev": "0d53f819643fdcae85cc609116cffe7eab26cf82",
         "type": "github"
       },
       "original": {
         "owner": "yqlbu",
-        "ref": "x1-carbon",
         "repo": "dot-dunst",
         "type": "github"
       }
@@ -52,16 +51,15 @@
     "dot-kitty": {
       "flake": false,
       "locked": {
-        "lastModified": 1709177526,
+        "lastModified": 1709432492,
         "narHash": "sha256-V9ar84hPxalQSUosjlwK2VSnyiYkaWJJ6bMHmpKbzJs=",
         "owner": "yqlbu",
         "repo": "dot-kitty",
-        "rev": "9952ea5f8b7414f52e9eac382d306db135b56ecf",
+        "rev": "7e747d19d8fc40144bb6791c10a2e3bf1a7698a0",
         "type": "github"
       },
       "original": {
         "owner": "yqlbu",
-        "ref": "x1-carbon",
         "repo": "dot-kitty",
         "type": "github"
       }
@@ -165,16 +163,15 @@
     "dot-swaylock": {
       "flake": false,
       "locked": {
-        "lastModified": 1709183488,
+        "lastModified": 1709432287,
         "narHash": "sha256-IbSojdelssVtVADIrsPs4LFX7MiRbaECYMvP5ksS3qE=",
         "owner": "yqlbu",
         "repo": "dot-swaylock",
-        "rev": "ef9b50e966196d291651ce6f14e0e973d6f578b4",
+        "rev": "bfa238b5fe8d79e960130d98baca88c594c44916",
         "type": "github"
       },
       "original": {
         "owner": "yqlbu",
-        "ref": "x1-carbon",
         "repo": "dot-swaylock",
         "type": "github"
       }
@@ -231,15 +228,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1709430738,
-        "narHash": "sha256-HoQsRIeuDYK0Z0/mUtkD1+RMD6Stpqp6GffmvrmKA6s=",
+        "lastModified": 1709237383,
+        "narHash": "sha256-cy6ArO4k5qTx+l5o+0mL9f5fa86tYUX3ozE1S+Txlds=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "31f91738fb4aae351f1ee93300139c751dcf8196",
+        "rev": "1536926ef5621b09bba54035ae2bb6d806d72ac8",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }

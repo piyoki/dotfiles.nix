@@ -59,7 +59,7 @@
 
   inputs = {
     # nix and flake
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
     # personal dotfiles
@@ -84,7 +84,7 @@
       flake = false;
     };
     dot-swaylock = {
-      url = "github:yqlbu/dot-swaylock/x1-carbon";
+      url = "github:yqlbu/dot-swaylock";
       flake = false;
     };
     dot-swappy = {
@@ -107,12 +107,12 @@
       url = "github:yqlbu/dot-hypr";
       flake = false;
     };
-    dot-dunst = {
-      url = "github:yqlbu/dot-dunst/x1-carbon";
+    dot-kitty = {
+      url = "github:yqlbu/dot-kitty";
       flake = false;
     };
-    dot-kitty = {
-      url = "github:yqlbu/dot-kitty/x1-carbon";
+    dot-dunst = {
+      url = "github:yqlbu/dot-dunst";
       flake = false;
     };
   };
