@@ -3,11 +3,11 @@
     "dot-dunst": {
       "flake": false,
       "locked": {
-        "lastModified": 1709432839,
+        "lastModified": 1709432846,
         "narHash": "sha256-Tquni9bEZOJly9vzCWh46DnKxS3cUHWka0cIvs9ZAFU=",
         "owner": "yqlbu",
         "repo": "dot-dunst",
-        "rev": "3de4f9662227f97909dbcefdae6585758f5e2f82",
+        "rev": "2bfcd7c8220d32d24b8a37b042a6145ac45120f0",
         "type": "github"
       },
       "original": {
