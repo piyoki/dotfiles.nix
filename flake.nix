@@ -82,7 +82,7 @@
       flake = false;
     };
     dot-rofi = {
-      url = "github:yqlbu/dot-rofi/x1-carbon";
+      url = "github:yqlbu/dot-rofi/master";
       flake = false;
     };
     dot-swaylock = {
@@ -94,7 +94,7 @@
       flake = false;
     };
     dot-waybar = {
-      url = "github:yqlbu/dot-waybar/nuc-12";
+      url = "github:yqlbu/dot-waybar/master";
       flake = false;
     };
     dot-tmux = {
@@ -106,7 +106,7 @@
       flake = false;
     };
     dot-hypr = {
-      url = "github:yqlbu/dot-hypr/nuc-12";
+      url = "github:yqlbu/dot-hypr/master";
       flake = false;
     };
     dot-dunst = {
