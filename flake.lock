@@ -115,11 +115,11 @@
     "dot-qutebrowser": {
       "flake": false,
       "locked": {
-        "lastModified": 1709439991,
-        "narHash": "sha256-83ApIc7tdwbuwacE9pjNT0OvuI8f/Q5e9PN9sVnRPVw=",
+        "lastModified": 1709440051,
+        "narHash": "sha256-+CoFt1D34BLxfuZSayeophIA+bt0T24APK7N4nm00oM=",
         "owner": "yqlbu",
         "repo": "dot-qutebrowser",
-        "rev": "b4aa2d7632c8d2d10a5b87847892f1e4e14da8ac",
+        "rev": "8b5ad7ebf3dc64ac859a954e46ece3ee82635dd0",
         "type": "github"
       },
       "original": {
