@@ -80,7 +80,7 @@
       flake = false;
     };
     dot-rofi = {
-      url = "github:yqlbu/dot-rofi/master";
+      url = "github:yqlbu/dot-rofi";
       flake = false;
     };
     dot-swaylock = {
@@ -88,23 +88,23 @@
       flake = false;
     };
     dot-swappy = {
-      url = "github:yqlbu/dot-swappy/master";
+      url = "github:yqlbu/dot-swappy";
       flake = false;
     };
     dot-waybar = {
-      url = "github:yqlbu/dot-waybar/master";
+      url = "github:yqlbu/dot-waybar";
       flake = false;
     };
     dot-tmux = {
-      url = "github:yqlbu/dot-tmux/x1-carbon";
+      url = "github:yqlbu/dot-tmux";
       flake = false;
     };
     dot-fish = {
-      url = "github:yqlbu/dot-fish/x1-carbon";
+      url = "github:yqlbu/dot-fish";
       flake = false;
     };
     dot-hypr = {
-      url = "github:yqlbu/dot-hypr/master";
+      url = "github:yqlbu/dot-hypr";
       flake = false;
     };
     dot-dunst = {
