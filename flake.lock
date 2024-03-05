@@ -195,11 +195,11 @@
     "dot-waybar": {
       "flake": false,
       "locked": {
-        "lastModified": 1709430428,
-        "narHash": "sha256-iDK7wfrwvv/T4C40i0FLod8iBxm1ic56W1uVn3nS97w=",
+        "lastModified": 1709638778,
+        "narHash": "sha256-8sJI6dEW3BBHpoZtz79XOCEZ9ygMPnP526XGyuLj0p0=",
         "owner": "yqlbu",
         "repo": "dot-waybar",
-        "rev": "37c7a7804b004f2671dc457217007b9b1ffd8bed",
+        "rev": "0fe9906aed5d9b169924074ebb8c3d5282c378c5",
         "type": "github"
       },
       "original": {
