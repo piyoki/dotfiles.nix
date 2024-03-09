@@ -99,11 +99,11 @@
     "dot-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1709977514,
-        "narHash": "sha256-/ocGXMkdCWNDWUqeGco8ZntwifSmC/YnEMmScB6x3Hg=",
+        "lastModified": 1709978141,
+        "narHash": "sha256-+1ZHH0AqjVSCaEUyXuiX2mxQt3acJayfm5a4CEmQNHE=",
         "owner": "yqlbu",
         "repo": "dot-nvim",
-        "rev": "af424c5c0b8c7aee0bc91d150be85b484a8ab1a3",
+        "rev": "edb2c2070fb8613b30d0904720a8ce8bf539ae9a",
         "type": "github"
       },
       "original": {
