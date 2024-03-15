@@ -19,11 +19,11 @@
     "dot-fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1710514175,
-        "narHash": "sha256-8dCC/asdmMggk6dBO1dVKECJShxKum3kt6RZtALM80M=",
+        "lastModified": 1710514478,
+        "narHash": "sha256-da0oZepmCLWuqvL6DlMRniw0aFbPFY28WLK41wwgeDU=",
         "owner": "yqlbu",
         "repo": "dot-fish",
-        "rev": "28493cb4f46a9228c5627cf2305df22dd8878c8e",
+        "rev": "66b1b39c02347b5254f8f2cf1c19478ade5dabb9",
         "type": "github"
       },
       "original": {
