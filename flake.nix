@@ -19,6 +19,7 @@
           hypr = inputs.dot-hypr;
           dunst = inputs.dot-dunst;
           kitty = inputs.dot-kitty;
+          alacritty = inputs.dot-alacritty;
         };
         cfg = builtins.mapAttrs
           (module: src:
@@ -50,6 +51,7 @@
           inherit (cfg) fish;
           inherit (cfg) hypr;
           inherit (cfg) kitty;
+          inherit (cfg) alacritty;
         };
         # dev environment
         devShells.default = with pkgs; mkShell {
@@ -109,6 +111,10 @@
     };
     dot-kitty = {
       url = "github:yqlbu/dot-kitty";
+      flake = false;
+    };
+    dot-alacritty = {
+      url = "github:yqlbu/dot-alacritty";
       flake = false;
     };
     dot-dunst = {
