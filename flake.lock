@@ -179,11 +179,11 @@
     "dot-tmux": {
       "flake": false,
       "locked": {
-        "lastModified": 1710671790,
-        "narHash": "sha256-CdsQ35m4dylU+/EaAkFEfzPAo0zQv6WEoGY2d915Lqc=",
+        "lastModified": 1710672042,
+        "narHash": "sha256-+MbMIvCSbjN/kbnEX6DJn3ghbRGWhJy7A755ovxU1zM=",
         "owner": "yqlbu",
         "repo": "dot-tmux",
-        "rev": "d8861982c7873083a6f18e1f188f9089ae88154f",
+        "rev": "8ed4a70a04c685e858e27dfdfe202159136ee2d1",
         "type": "github"
       },
       "original": {
