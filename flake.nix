@@ -7,20 +7,20 @@
         pkgs = (import nixpkgs) { inherit system; };
         src = {
           # universal
-          qutebrowser = inputs.dot-qutebrowser;
-          waybar = inputs.dot-waybar;
-          nvim = inputs.dot-nvim;
-          lf = inputs.dot-lf;
-          lazygit = inputs.dot-lazygit;
-          rofi = inputs.dot-rofi;
-          swaylock = inputs.dot-swaylock;
-          swappy = inputs.dot-swappy;
-          tmux = inputs.dot-tmux;
-          fish = inputs.dot-fish;
-          hypr = inputs.dot-hypr;
-          dunst = inputs.dot-dunst;
-          kitty = inputs.dot-kitty;
-          alacritty = inputs.dot-alacritty;
+          qutebrowser-universal = inputs.dot-qutebrowser;
+          waybar-universal = inputs.dot-waybar;
+          nvim-universal = inputs.dot-nvim;
+          lf-universal = inputs.dot-lf;
+          lazygit-universal = inputs.dot-lazygit;
+          rofi-universal = inputs.dot-rofi;
+          swaylock-universal = inputs.dot-swaylock;
+          swappy-universal = inputs.dot-swappy;
+          tmux-universal = inputs.dot-tmux;
+          fish-universal = inputs.dot-fish;
+          hypr-universal = inputs.dot-hypr;
+          dunst-universal = inputs.dot-dunst;
+          kitty-universal = inputs.dot-kitty;
+          alacritty-universal = inputs.dot-alacritty;
 
           # host-specific
           rofi-laptop = inputs.dot-rofi-laptop;
@@ -46,20 +46,20 @@
         packages = {
           default = nixpkgs.legacyPackages.${system}.neofetch;
           # universal
-          inherit (cfg) qutebrowser;
-          inherit (cfg) waybar;
-          inherit (cfg) nvim;
-          inherit (cfg) lf;
-          inherit (cfg) lazygit;
-          inherit (cfg) rofi;
-          inherit (cfg) swaylock;
-          inherit (cfg) swappy;
-          inherit (cfg) tmux;
-          inherit (cfg) dunst;
-          inherit (cfg) fish;
-          inherit (cfg) hypr;
-          inherit (cfg) kitty;
-          inherit (cfg) alacritty;
+          inherit (cfg) qutebrowser-universal;
+          inherit (cfg) waybar-universal;
+          inherit (cfg) nvim-universal;
+          inherit (cfg) lf-universal;
+          inherit (cfg) lazygit-universal;
+          inherit (cfg) rofi-universal;
+          inherit (cfg) swaylock-universal;
+          inherit (cfg) swappy-universal;
+          inherit (cfg) tmux-universal;
+          inherit (cfg) dunst-universal;
+          inherit (cfg) fish-universal;
+          inherit (cfg) hypr-universal;
+          inherit (cfg) kitty-universal;
+          inherit (cfg) alacritty-universal;
 
           # host-specific
           inherit (cfg) rofi-laptop;
