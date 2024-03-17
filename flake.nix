@@ -7,26 +7,26 @@
         pkgs = (import nixpkgs) { inherit system; };
         src = {
           # universal
-          qutebrowser-universal = inputs.dot-qutebrowser;
-          waybar-universal = inputs.dot-waybar;
-          nvim-universal = inputs.dot-nvim;
-          lf-universal = inputs.dot-lf;
-          lazygit-universal = inputs.dot-lazygit;
-          rofi-universal = inputs.dot-rofi;
-          swaylock-universal = inputs.dot-swaylock;
-          swappy-universal = inputs.dot-swappy;
-          tmux-universal = inputs.dot-tmux;
-          fish-universal = inputs.dot-fish;
-          hypr-universal = inputs.dot-hypr;
-          dunst-universal = inputs.dot-dunst;
-          kitty-universal = inputs.dot-kitty;
-          alacritty-universal = inputs.dot-alacritty;
+          inherit (inputs) qutebrowser-universal;
+          inherit (inputs) waybar-universal;
+          inherit (inputs) nvim-universal;
+          inherit (inputs) lf-universal;
+          inherit (inputs) lazygit-universal;
+          inherit (inputs) rofi-universal;
+          inherit (inputs) swaylock-universal;
+          inherit (inputs) swappy-universal;
+          inherit (inputs) tmux-universal;
+          inherit (inputs) fish-universal;
+          inherit (inputs) hypr-universal;
+          inherit (inputs) dunst-universal;
+          inherit (inputs) kitty-universal;
+          inherit (inputs) alacritty-universal;
 
           # host-specific
-          rofi-laptop = inputs.dot-rofi-laptop;
-          waybar-laptop = inputs.dot-waybar-laptop;
-          hypr-laptop = inputs.dot-hypr-laptop;
-          dunst-laptop = inputs.dot-dunst-laptop;
+          inherit (inputs) rofi-laptop;
+          inherit (inputs) waybar-laptop;
+          inherit (inputs) hypr-laptop;
+          inherit (inputs) dunst-laptop;
         };
         cfg = builtins.mapAttrs
           (module: src:
@@ -44,7 +44,6 @@
       {
         # define output packages
         packages = {
-          default = nixpkgs.legacyPackages.${system}.neofetch;
           # universal
           inherit (cfg) qutebrowser-universal;
           inherit (cfg) waybar-universal;
@@ -79,25 +78,25 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # universal configs
-    dot-qutebrowser = { url = "github:yqlbu/dot-qutebrowser"; flake = false; };
-    dot-nvim = { url = "github:yqlbu/dot-nvim"; flake = false; };
-    dot-lf = { url = "github:yqlbu/dot-lf"; flake = false; };
-    dot-lazygit = { url = "github:yqlbu/dot-lazygit"; flake = false; };
-    dot-rofi = { url = "github:yqlbu/dot-rofi"; flake = false; };
-    dot-swaylock = { url = "github:yqlbu/dot-swaylock"; flake = false; };
-    dot-swappy = { url = "github:yqlbu/dot-swappy"; flake = false; };
-    dot-waybar = { url = "github:yqlbu/dot-waybar"; flake = false; };
-    dot-tmux = { url = "github:yqlbu/dot-tmux"; flake = false; };
-    dot-fish = { url = "github:yqlbu/dot-fish"; flake = false; };
-    dot-hypr = { url = "github:yqlbu/dot-hypr"; flake = false; };
-    dot-kitty = { url = "github:yqlbu/dot-kitty"; flake = false; };
-    dot-alacritty = { url = "github:yqlbu/dot-alacritty"; flake = false; };
-    dot-dunst = { url = "github:yqlbu/dot-dunst"; flake = false; };
+    qutebrowser-universal = { url = "github:yqlbu/dot-qutebrowser"; flake = false; };
+    nvim-universal = { url = "github:yqlbu/dot-nvim"; flake = false; };
+    lf-universal = { url = "github:yqlbu/dot-lf"; flake = false; };
+    lazygit-universal = { url = "github:yqlbu/dot-lazygit"; flake = false; };
+    rofi-universal = { url = "github:yqlbu/dot-rofi"; flake = false; };
+    swaylock-universal = { url = "github:yqlbu/dot-swaylock"; flake = false; };
+    swappy-universal = { url = "github:yqlbu/dot-swappy"; flake = false; };
+    waybar-universal = { url = "github:yqlbu/dot-waybar"; flake = false; };
+    tmux-universal = { url = "github:yqlbu/dot-tmux"; flake = false; };
+    fish-universal = { url = "github:yqlbu/dot-fish"; flake = false; };
+    hypr-universal = { url = "github:yqlbu/dot-hypr"; flake = false; };
+    kitty-universal = { url = "github:yqlbu/dot-kitty"; flake = false; };
+    alacritty-universal = { url = "github:yqlbu/dot-alacritty"; flake = false; };
+    dunst-universal = { url = "github:yqlbu/dot-dunst"; flake = false; };
 
     # host-specific
-    dot-rofi-laptop = { url = "github:yqlbu/dot-rofi/x1-carbon"; flake = false; };
-    dot-waybar-laptop = { url = "github:yqlbu/dot-waybar/x1-carbon"; flake = false; };
-    dot-hypr-laptop = { url = "github:yqlbu/dot-hypr/x1-carbon"; flake = false; };
-    dot-dunst-laptop = { url = "github:yqlbu/dot-dunst/x1-carbon"; flake = false; };
+    rofi-laptop = { url = "github:yqlbu/dot-rofi/x1-carbon"; flake = false; };
+    waybar-laptop = { url = "github:yqlbu/dot-waybar/x1-carbon"; flake = false; };
+    hypr-laptop = { url = "github:yqlbu/dot-hypr/x1-carbon"; flake = false; };
+    dunst-laptop = { url = "github:yqlbu/dot-dunst/x1-carbon"; flake = false; };
   };
 }
