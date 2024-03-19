@@ -21,6 +21,7 @@
           inherit (inputs) dunst-universal;
           inherit (inputs) kitty-universal;
           inherit (inputs) alacritty-universal;
+          inherit (inputs) foot-universal;
 
           # host-specific
           inherit (inputs) rofi-laptop;
@@ -59,6 +60,7 @@
           inherit (cfg) hypr-universal;
           inherit (cfg) kitty-universal;
           inherit (cfg) alacritty-universal;
+          inherit (cfg) foot-universal;
 
           # host-specific
           inherit (cfg) rofi-laptop;
@@ -91,6 +93,7 @@
     hypr-universal = { url = "github:yqlbu/dot-hypr"; flake = false; };
     kitty-universal = { url = "github:yqlbu/dot-kitty"; flake = false; };
     alacritty-universal = { url = "github:yqlbu/dot-alacritty"; flake = false; };
+    foot-universal = { url = "github:yqlbu/dot-foot"; flake = false; };
     dunst-universal = { url = "github:yqlbu/dot-dunst"; flake = false; };
 
     # host-specific

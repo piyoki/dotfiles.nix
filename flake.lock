@@ -83,6 +83,22 @@
         "type": "github"
       }
     },
+    "foot-universal": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1710865042,
+        "narHash": "sha256-z3kCWhGJBZs9jLdaqPkV1gVvCZI9BXbiUqs9B5bEdUs=",
+        "owner": "yqlbu",
+        "repo": "dot-foot",
+        "rev": "ef4712be8cb57f001aa25144c82090ec5ac7c8b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yqlbu",
+        "repo": "dot-foot",
+        "type": "github"
+      }
+    },
     "hypr-laptop": {
       "flake": false,
       "locked": {
@@ -252,6 +268,7 @@
         "dunst-universal": "dunst-universal",
         "fish-universal": "fish-universal",
         "flake-utils": "flake-utils",
+        "foot-universal": "foot-universal",
         "hypr-laptop": "hypr-laptop",
         "hypr-universal": "hypr-universal",
         "kitty-universal": "kitty-universal",
