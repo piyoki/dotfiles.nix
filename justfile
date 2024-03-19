@@ -2,9 +2,6 @@
 # cheatsheet: https://cheatography.com/linux-china/cheat-sheets/justfile/
 
 # ===== Settings ===== #
-#
-# define alias
-alias b := rebuild
 
 # set options
 set positional-arguments := true
@@ -18,10 +15,6 @@ default:
   @just --list
 
 # ===== Nix ===== #
-
-# rebuild nixos
-rebuild host=profile:
-  @sudo nixos-rebuild switch --upgrade --flake .#{{ host }}
 
 # update all flake inputs
 up:
@@ -63,30 +56,10 @@ prefetch-git repo rev:
 repl:
   @nix repl -f flake:nixpkgs
 
-# remove all generations older than 7 days
-clean:
-  @sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 3d
-
-# garbage collect all unused nix store entries
-gc:
-  @sudo nix store gc --debug
-  @sudo nix-collect-garbage --delete-old
-
 # apply fix from linters
 lint:
   @statix fix --ignore 'templates/' .
   @deadnix --edit --exclude 'templates/' .
-
-
-# ===== Remote deploy ===== #
-
-# remote deploy with colmena
-deploy host:
-  @colmena apply --verbose --on {{ host }} --show-trace
-
-# remote deploy servers with @tags with colmena
-deploy-with-tags tags:
-  @colmena apply --verbose --on @{{ tags }} --show-trace
 
 # ===== Misc ===== #
 
@@ -103,14 +76,3 @@ add:
 # git pull
 pull:
   @git pull --rebase
-
-# ===== Tests ===== #
-
-# clean nvim configs
-nvim-clean:
-  rm -rf ${HOME}.config/nvim
-
-# rsync nvim configs from dot-nvim
-nvim-test: nvim-clean
-  rsync -avz --copy-links --chmod=D2755,F744 $HOME/Workspace/personal/dot-submodules/dot-nvim/ ${HOME}/.config/nvim
-
