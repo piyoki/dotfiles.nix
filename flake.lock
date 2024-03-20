@@ -3,11 +3,11 @@
     "alacritty-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1710945630,
-        "narHash": "sha256-xT9v8XJtw7SiuyfXgQJFE+JUzgPFXqHO2hFmcHE/kIA=",
+        "lastModified": 1710945672,
+        "narHash": "sha256-7/F+LFxscQM+O1CsUy5fGDqJ8gRvrrzYODWKLoheZuU=",
         "owner": "yqlbu",
         "repo": "dot-alacritty",
-        "rev": "520c7c570ee4f00cebdac42aa3cc944e787c8db2",
+        "rev": "701b14a89952d618894181a3224274ce4472f078",
         "type": "github"
       },
       "original": {
