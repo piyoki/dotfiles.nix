@@ -86,11 +86,11 @@
     "foot-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1710944391,
-        "narHash": "sha256-MLXdVm3AvP5BIV5mATG9XBgpRVxVgKLUd0YfMlWL1nI=",
+        "lastModified": 1710944777,
+        "narHash": "sha256-jcOVVSZJTA/QFqAEuDqKstHt591rBYYEOv+gR3eYixs=",
         "owner": "yqlbu",
         "repo": "dot-foot",
-        "rev": "80041a4bc9304feeecbaccbce9613388cbe7ecd2",
+        "rev": "f82fe97bb0e578e17fc203aa3e93b7c92bc63b7d",
         "type": "github"
       },
       "original": {
