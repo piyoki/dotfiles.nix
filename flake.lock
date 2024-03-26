@@ -215,11 +215,11 @@
     "qutebrowser-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1711465991,
-        "narHash": "sha256-46xZwq2f+KFcMaHLD+tXkDBZfEgN3PIQl6gBrHUePuw=",
+        "lastModified": 1711466204,
+        "narHash": "sha256-Bf7bS4/JBYjgV30EUImLnZGB3dOG/6oozpNXH0JGQu8=",
         "owner": "yqlbu",
         "repo": "dot-qutebrowser",
-        "rev": "353e3484ef14389ec01e59641e9eded0cc04351c",
+        "rev": "0b307b9c8a84b26a342379bb563522e312017e79",
         "type": "github"
       },
       "original": {
