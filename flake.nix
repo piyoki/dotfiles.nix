@@ -80,26 +80,26 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     # universal configs
-    qutebrowser-universal = { url = "github:yqlbu/dot-qutebrowser"; flake = false; };
-    nvim-universal = { url = "github:yqlbu/dot-nvim"; flake = false; };
-    lf-universal = { url = "github:yqlbu/dot-lf"; flake = false; };
-    lazygit-universal = { url = "github:yqlbu/dot-lazygit"; flake = false; };
-    rofi-universal = { url = "github:yqlbu/dot-rofi"; flake = false; };
-    swaylock-universal = { url = "github:yqlbu/dot-swaylock"; flake = false; };
-    swappy-universal = { url = "github:yqlbu/dot-swappy"; flake = false; };
-    waybar-universal = { url = "github:yqlbu/dot-waybar"; flake = false; };
-    tmux-universal = { url = "github:yqlbu/dot-tmux"; flake = false; };
-    fish-universal = { url = "github:yqlbu/dot-fish"; flake = false; };
-    hypr-universal = { url = "github:yqlbu/dot-hypr"; flake = false; };
-    kitty-universal = { url = "github:yqlbu/dot-kitty"; flake = false; };
-    alacritty-universal = { url = "github:yqlbu/dot-alacritty"; flake = false; };
-    foot-universal = { url = "github:yqlbu/dot-foot"; flake = false; };
-    dunst-universal = { url = "github:yqlbu/dot-dunst"; flake = false; };
+    qutebrowser-universal = { url = "github:miooochi/dot-qutebrowser"; flake = false; };
+    nvim-universal = { url = "github:miooochi/dot-nvim"; flake = false; };
+    lf-universal = { url = "github:miooochi/dot-lf"; flake = false; };
+    lazygit-universal = { url = "github:miooochi/dot-lazygit"; flake = false; };
+    rofi-universal = { url = "github:miooochi/dot-rofi"; flake = false; };
+    swaylock-universal = { url = "github:miooochi/dot-swaylock"; flake = false; };
+    swappy-universal = { url = "github:miooochi/dot-swappy"; flake = false; };
+    waybar-universal = { url = "github:miooochi/dot-waybar"; flake = false; };
+    tmux-universal = { url = "github:miooochi/dot-tmux"; flake = false; };
+    fish-universal = { url = "github:miooochi/dot-fish"; flake = false; };
+    hypr-universal = { url = "github:miooochi/dot-hypr"; flake = false; };
+    kitty-universal = { url = "github:miooochi/dot-kitty"; flake = false; };
+    alacritty-universal = { url = "github:miooochi/dot-alacritty"; flake = false; };
+    foot-universal = { url = "github:miooochi/dot-foot"; flake = false; };
+    dunst-universal = { url = "github:miooochi/dot-dunst"; flake = false; };
 
     # host-specific
-    rofi-laptop = { url = "github:yqlbu/dot-rofi/x1-carbon"; flake = false; };
-    waybar-laptop = { url = "github:yqlbu/dot-waybar/x1-carbon"; flake = false; };
-    hypr-laptop = { url = "github:yqlbu/dot-hypr/x1-carbon"; flake = false; };
-    dunst-laptop = { url = "github:yqlbu/dot-dunst/x1-carbon"; flake = false; };
+    rofi-laptop = { url = "github:miooochi/dot-rofi/x1-carbon"; flake = false; };
+    waybar-laptop = { url = "github:miooochi/dot-waybar/x1-carbon"; flake = false; };
+    hypr-laptop = { url = "github:miooochi/dot-hypr/x1-carbon"; flake = false; };
+    dunst-laptop = { url = "github:miooochi/dot-dunst/x1-carbon"; flake = false; };
   };
 }
