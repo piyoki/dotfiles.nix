@@ -102,11 +102,11 @@
     "hypr-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1711373883,
-        "narHash": "sha256-3NvuFWfPWqIarBo2mnb3EwAy8k/4ynRJDp/Qjh+hLMo=",
+        "lastModified": 1712104480,
+        "narHash": "sha256-XfCzWiGHSDX27EnWg5Qmkpt2XHg+vRuuhtNQsiLntxQ=",
         "owner": "miooochi",
         "repo": "dot-hypr",
-        "rev": "2c79837500f5547849b61ad78caac18b6a115a56",
+        "rev": "2af5cd8cfa50aae85ceaf41fd76ebecaf3cd408b",
         "type": "github"
       },
       "original": {
@@ -119,11 +119,11 @@
     "hypr-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1711445918,
-        "narHash": "sha256-zrASmtNw6yovmAG/3H3vvHRniaUsIIr3wVGjP9qLmrg=",
+        "lastModified": 1712104442,
+        "narHash": "sha256-NYiHj0+wYorHVaF7Ykx/xcoYQIIapwhe5sphTcyJCHE=",
         "owner": "miooochi",
         "repo": "dot-hypr",
-        "rev": "0114114234464884b364ad935167e0cf31e103cd",
+        "rev": "bbab38a07151d0ec596c4e888ecc0ffa247b5459",
         "type": "github"
       },
       "original": {
