@@ -119,11 +119,11 @@
     "hypr-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1714742098,
-        "narHash": "sha256-9Odhz7sNlN6lvmyx4aqv3InCaflxEt0KOhNPFPyXqDw=",
+        "lastModified": 1718585132,
+        "narHash": "sha256-nkbPXAZOEYcWw8xS/TOjWxqPejfoLiC/c/b19rlR1dU=",
         "owner": "miooochi",
         "repo": "dot-hypr",
-        "rev": "9957ff9281249da480e6cd9e96c7b486f37fba7d",
+        "rev": "643cbad3d6d5440b9a19d363f7c2a900b30c72fb",
         "type": "github"
       },
       "original": {
