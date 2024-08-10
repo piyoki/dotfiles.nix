@@ -102,11 +102,11 @@
     "hypr-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1723122296,
-        "narHash": "sha256-JNkDoWYoBX7y8egpphXBiCaM2iGfYAaednKRCj72o3I=",
+        "lastModified": 1723253442,
+        "narHash": "sha256-nnpqJ6gV1HwYcfPeCGTZGZ1M6fobbV1sqjIxiidCUms=",
         "owner": "piyoki",
         "repo": "dot-hypr",
-        "rev": "348893affc316089d3c327b4ac8a9b789c70a289",
+        "rev": "a41da5ed224dcf580536c331e33d45d3f848d5bb",
         "type": "github"
       },
       "original": {
@@ -119,11 +119,11 @@
     "hypr-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1723122242,
-        "narHash": "sha256-9wniSzPF4msitj5NAf62Rpj170EXDGoQKrgjwJM9sxc=",
+        "lastModified": 1723250660,
+        "narHash": "sha256-aFAlAGVgctvPxpfj1ceZXMobqr44iCtiijS5V1t05+I=",
         "owner": "piyoki",
         "repo": "dot-hypr",
-        "rev": "4e612e4cb04e78b4ecd283d3096234e9bdf2eb0a",
+        "rev": "f20f3f350b5de0c6f4f16b501c3d348dd51b6a04",
         "type": "github"
       },
       "original": {
