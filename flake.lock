@@ -231,11 +231,11 @@
     "rofi-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1721141083,
-        "narHash": "sha256-3m+LQjQizv6nvJn1CzxdYElWOMOLnccZhaxF3W4AMvg=",
+        "lastModified": 1723320802,
+        "narHash": "sha256-swq/u7KpP8h5YDw5M6Qv3iAUQsEWRdKSprWjfMSsNQ8=",
         "owner": "piyoki",
         "repo": "dot-rofi",
-        "rev": "7cc40664ab2fb3fdd34640de7650fc669b9c2ebe",
+        "rev": "5e69d7a21fa798134353421981f12729e802d077",
         "type": "github"
       },
       "original": {
@@ -248,11 +248,11 @@
     "rofi-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1721141105,
-        "narHash": "sha256-zcKGR8LieGsMxOdCOYgSC53pTug9uCbsJGqE5DPJm2Y=",
+        "lastModified": 1723320832,
+        "narHash": "sha256-wawHd9I89agLqhcrjtwS35Z4VWz2H00BpwJyu062KV8=",
         "owner": "piyoki",
         "repo": "dot-rofi",
-        "rev": "9d4ed373e1bf97cbcf4884db1e2e3d4f2f64d646",
+        "rev": "124f64aecb9355d88975079b8eba8a9c82ee1a8b",
         "type": "github"
       },
       "original": {
