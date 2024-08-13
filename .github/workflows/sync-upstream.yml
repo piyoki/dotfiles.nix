@@ -8,6 +8,10 @@ on:
         type: string
         description: flake input to be synced
         required: true
+      branch:
+        type: string
+        description: upstream branch to be synced
+        required: false
 
 jobs:
   sync-upstream:
@@ -27,6 +31,16 @@ jobs:
         #   submodules: true
           token: ${{ steps.generate_token.outputs.token }}
 
+      - name: Determine flake input
+        id: flake_input
+        shell: bash
+        run: |
+          if [ "${{ inputs.branch }}" = "x1-carbon" ]; then
+            echo "INPUT=${{ inputs.target }}-laptop" >> $GITHUB_OUTPUT
+          else
+            echo "INPUT=${{ inputs.target }}-universal" >> $GITHUB_OUTPUT
+          fi
+
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - uses: DeterminateSystems/flake-checker-action@main
@@ -34,7 +48,7 @@ jobs:
       - name: update flake upstream input
         shell: bash
         run: |
-          nix flake lock --update-input "${{ inputs.target }}-universal"
+          nix flake lock --update-input "${{ steps.flake_input.outputs.INPUT }}"
 
       - uses: EndBug/add-and-commit@main
         with:
