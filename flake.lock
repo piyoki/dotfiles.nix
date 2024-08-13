@@ -19,11 +19,11 @@
     "dunst-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1709432846,
-        "narHash": "sha256-Tquni9bEZOJly9vzCWh46DnKxS3cUHWka0cIvs9ZAFU=",
+        "lastModified": 1723564739,
+        "narHash": "sha256-1nm67JMeYlPTjkaFA56AEwXEUxeHr9fkOWJQHDRsZ3E=",
         "owner": "piyoki",
         "repo": "dot-dunst",
-        "rev": "2bfcd7c8220d32d24b8a37b042a6145ac45120f0",
+        "rev": "b598b30cd005bf68527d030195d8c52aba37f512",
         "type": "github"
       },
       "original": {
