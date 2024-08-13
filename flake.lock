@@ -167,11 +167,11 @@
     "lf-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1707401707,
-        "narHash": "sha256-9zU6WCYUb3m4C+YPCQkQB67Va8gT/1gpzZWAsQnOKHE=",
+        "lastModified": 1723563928,
+        "narHash": "sha256-yPiZBeYaO304ltD3XCA5Wd1sH5s0qOH9rQn/5nvyy6Q=",
         "owner": "piyoki",
         "repo": "dot-lf",
-        "rev": "54992b2cc08dc753a4aebce80c57483fef315f21",
+        "rev": "053db46c0506d58692f79209446f7afe2e5cf9f7",
         "type": "github"
       },
       "original": {
