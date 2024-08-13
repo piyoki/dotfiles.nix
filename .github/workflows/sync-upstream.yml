@@ -1,9 +1,10 @@
 ---
 name: Synchronize upstream inputs
+
 on:
   workflow_dispatch:
     inputs:
-      input:
+      target:
         type: string
         description: flake input to be synced
         required: true
@@ -25,10 +26,10 @@ jobs:
       - name: update flake upstream input
         shell: bash
         run: |
-          nix flake lock --update-input "$(echo ${{ inputs.input }} | cut -d'-' -f2)-universal"
+          nix flake lock --update-input "${{ inputs.target }}-universal"
 
       - uses: EndBug/add-and-commit@main
         with:
           add: flake.lock
           commit: --signoff
-          message: "chore(flake): update flake.lock to sync input.${{ inputs.input }}"
+          message: "chore(flake): update flake.lock to sync input.${{ inputs.target }}"
