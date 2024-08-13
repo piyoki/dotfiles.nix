@@ -54,4 +54,4 @@ jobs:
         with:
           add: flake.lock
           commit: --signoff
-          message: "chore(flake): update flake.lock to sync input.${{ inputs.target }}"
+          message: "chore(flake): update flake.lock to sync input.${{ steps.flake_input.outputs.INPUT }}"
