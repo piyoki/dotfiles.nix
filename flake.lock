@@ -305,11 +305,11 @@
     "swaylock-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1709432287,
-        "narHash": "sha256-IbSojdelssVtVADIrsPs4LFX7MiRbaECYMvP5ksS3qE=",
+        "lastModified": 1723564315,
+        "narHash": "sha256-fC/u9hWBg/Jbt8Qyix9inogBxatyxeJgIkQChAPfSlM=",
         "owner": "piyoki",
         "repo": "dot-swaylock",
-        "rev": "bfa238b5fe8d79e960130d98baca88c594c44916",
+        "rev": "beb623fcb6f4f8e6a10ec2256078c214913d434b",
         "type": "github"
       },
       "original": {
