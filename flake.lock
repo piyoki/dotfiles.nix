@@ -199,11 +199,11 @@
     "nvim-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1723563781,
-        "narHash": "sha256-cd8i1CY2f/4bPgMP81Rp38p1j8qemLTXPX1ZW0N5wD4=",
+        "lastModified": 1723741895,
+        "narHash": "sha256-aJX8Ue5gG4vOuYZ+aforunNMmcic46HMcTSCsf2DZUs=",
         "owner": "piyoki",
         "repo": "dot-nvim",
-        "rev": "0f11cbfaefca41c81467f48d638a88ffab1d6db9",
+        "rev": "e6fbcea9d0819a2fbf4c2e59338612c11aba8725",
         "type": "github"
       },
       "original": {
