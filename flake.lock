@@ -289,11 +289,11 @@
     "swappy-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1723564452,
-        "narHash": "sha256-k2wPkBsTIeETIQbkBV3/Ugzy5WddQbqYhTNOZgTApd0=",
+        "lastModified": 1723899095,
+        "narHash": "sha256-/wMFY2pPTxSH++3uP9yR8Oj+D35qWlY1ZEYwjQN4t8g=",
         "owner": "piyoki",
         "repo": "dot-swappy",
-        "rev": "7bc3bbf02087db44afb672e562e9b24c21801d25",
+        "rev": "0622e26912b63fd17da560f57af968c6cb53c65a",
         "type": "github"
       },
       "original": {
