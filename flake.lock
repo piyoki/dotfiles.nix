@@ -52,11 +52,11 @@
     "fish-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1723564638,
-        "narHash": "sha256-qRG2s3JOyfKGu51MLEfwrG1mzYvXGc2OTfrRumroCM8=",
+        "lastModified": 1723899381,
+        "narHash": "sha256-6VMV5hUK/vCaik6h9n6MavPqtLNBinhNfqP3Fi/zbS0=",
         "owner": "piyoki",
         "repo": "dot-fish",
-        "rev": "a848c7204c377ca347d176edff99046068bd01e0",
+        "rev": "e315f94612c59acdde16937506ed6da9a41a576d",
         "type": "github"
       },
       "original": {
