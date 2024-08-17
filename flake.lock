@@ -36,11 +36,11 @@
     "dunst-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1709432988,
-        "narHash": "sha256-dvgPbsSSmytiBZzxgFGGAiEZQCqzF2uBj7ehVVrF/1c=",
+        "lastModified": 1723899130,
+        "narHash": "sha256-e7mpnc+apbsrLn/DQ0fQ+776wpzXMo5xLv5Zeg30jmA=",
         "owner": "piyoki",
         "repo": "dot-dunst",
-        "rev": "0d53f819643fdcae85cc609116cffe7eab26cf82",
+        "rev": "93cc6d78367372b7f6a973abe73123549f2cca33",
         "type": "github"
       },
       "original": {
