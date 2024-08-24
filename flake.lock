@@ -102,11 +102,11 @@
     "hypr-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1723898668,
-        "narHash": "sha256-kexKK8PzXziKVStrPDbuPR6k2XwjLL/aICWBvlAjG3w=",
+        "lastModified": 1724464631,
+        "narHash": "sha256-PE8HbL6B62cFozpHe33aVqpTuQVIUzFSjuOscaHygy4=",
         "owner": "piyoki",
         "repo": "dot-hypr",
-        "rev": "6bcdfe1286ea4dfb4a6642ff23e0587645162af5",
+        "rev": "af894ba3c1deddca583af354da573b5851ed8576",
         "type": "github"
       },
       "original": {
