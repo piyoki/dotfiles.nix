@@ -369,11 +369,11 @@
     "waybar-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1724630001,
-        "narHash": "sha256-lvi3NT00ZbWNbTloV0fxXBW6If1GdqT46yVZ3XRqyAE=",
+        "lastModified": 1724639399,
+        "narHash": "sha256-RsF90KJP+a6keFaApjZOF/wXdicMw2j8a4FBaKNmUB0=",
         "owner": "piyoki",
         "repo": "dot-waybar",
-        "rev": "9a4f04edb741cd6e06ed042ea357cf64f4975d70",
+        "rev": "5b5f5a9bce8f36e5815a4e9a47c0b6beb19e26ab",
         "type": "github"
       },
       "original": {
