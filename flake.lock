@@ -231,11 +231,11 @@
     "rofi-laptop": {
       "flake": false,
       "locked": {
-        "lastModified": 1723898844,
-        "narHash": "sha256-ZvcDbq4GuAv1v5fscriEcZpIenC5Ch7yoIp3DvJD8T8=",
+        "lastModified": 1728353392,
+        "narHash": "sha256-szdDvTq/4s4Zz5nGOCD4Z2vinC10Al1mV3cSkvR7sUs=",
         "owner": "piyoki",
         "repo": "dot-rofi",
-        "rev": "ed326698817cb98415e7d77ac60108c98ff9f59d",
+        "rev": "041ec084c862cab3630e558d74ed77a28fdb1120",
         "type": "github"
       },
       "original": {
