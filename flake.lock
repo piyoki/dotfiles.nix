@@ -336,11 +336,11 @@
     "tmux-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1728564961,
-        "narHash": "sha256-mB/esfCKnQifFJlJU/76iqtVJcXhwJa0wj7m4EjQd8g=",
+        "lastModified": 1728565196,
+        "narHash": "sha256-nb+D7ugdJMvkipNAEbL2odLDVwJXLd3oYHv0VgjP2yo=",
         "owner": "piyoki",
         "repo": "dot-tmux",
-        "rev": "e4a6a9211d114a48db81a27274568a7111305aa5",
+        "rev": "1efdb5861c44ea155b5cd1d8ba92864705c1e722",
         "type": "github"
       },
       "original": {
