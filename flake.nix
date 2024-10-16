@@ -22,6 +22,7 @@
           inherit (inputs) kitty-universal;
           inherit (inputs) alacritty-universal;
           inherit (inputs) foot-universal;
+          inherit (inputs) mpv-universal;
 
           # host-specific
           inherit (inputs) rofi-laptop;
@@ -61,6 +62,7 @@
           inherit (cfg) kitty-universal;
           inherit (cfg) alacritty-universal;
           inherit (cfg) foot-universal;
+          inherit (cfg) mpv-universal;
 
           # host-specific
           inherit (cfg) rofi-laptop;
@@ -95,6 +97,7 @@
     alacritty-universal = { url = "github:piyoki/dot-alacritty"; flake = false; };
     foot-universal = { url = "github:piyoki/dot-foot"; flake = false; };
     dunst-universal = { url = "github:piyoki/dot-dunst"; flake = false; };
+    mpv-universal = { url = "github:piyoki/dot-mpv"; flake = false; };
 
     # host-specific
     rofi-laptop = { url = "github:piyoki/dot-rofi/x1-carbon"; flake = false; };
