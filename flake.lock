@@ -183,11 +183,11 @@
     "mpv-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1729106994,
-        "narHash": "sha256-pHcms6wnVHWbMBLNpBYA3G8ce/dknwq4BwAi6bs32WY=",
+        "lastModified": 1729107779,
+        "narHash": "sha256-NpuUtepgLXqJ8Q8L5UdOwAK0k4ANUCEf8embZC3cCuc=",
         "owner": "piyoki",
         "repo": "dot-mpv",
-        "rev": "350bcbbed63bb9e765a07994bdc12eca84af0bc2",
+        "rev": "3c65cc95d8577129fa73587d6b29df626f7166a9",
         "type": "github"
       },
       "original": {
