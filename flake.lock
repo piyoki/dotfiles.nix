@@ -151,11 +151,11 @@
     "lazygit-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1723899323,
-        "narHash": "sha256-1w9FsLuEfQgG/2K7JO8Pz2AGVHtU0h5XyOEKah4xCxg=",
+        "lastModified": 1764543658,
+        "narHash": "sha256-4k9t4YRSlXhZXWMRha4MeC0uPHAez6ig19PdG6HXJmE=",
         "owner": "piyoki",
         "repo": "dot-lazygit",
-        "rev": "e8184a642a7a45e1def4b08c9274fa71549e938a",
+        "rev": "0125945ee93f46a078ff49e45fd93872a53cdf17",
         "type": "github"
       },
       "original": {
