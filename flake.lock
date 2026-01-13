@@ -264,11 +264,11 @@
     "rofi-universal": {
       "flake": false,
       "locked": {
-        "lastModified": 1764598239,
-        "narHash": "sha256-Xvu3wM9GuD4vhVBqK3ubqlSAvU+DsjQJsGmlXqh+kcI=",
+        "lastModified": 1768272526,
+        "narHash": "sha256-p6B06xZQ30EZAV+YVYYfZ7HqxCG81dPfL2rsSRfzqeY=",
         "owner": "piyoki",
         "repo": "dot-rofi",
-        "rev": "8ada66051995929b357df7000e5d933d73663d62",
+        "rev": "71663bfdf69531d5fa8d18207b76728be9272813",
         "type": "github"
       },
       "original": {
